@@ -1,0 +1,15 @@
+TELEMETRY PISATZ0001 EH_IMU_TLM BIG_ENDIAN "Mag and Accel Data from the EH IMU"
+  APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x0920 "CCSDS Packet identification" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SEQUENCE 16 UINT        "CCSDS Packet Sqeuence Control" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_LENGTH   16 UINT        "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SECONDS  32 UINT        "CCSDS Telemetry Secondary Header (seconds)"
+  APPEND_ITEM    CCSDS_SUBSECS  16 UINT        "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM    usCmdCnt        8 UINT        "EH_IMU Command Counter"
+  APPEND_ITEM    usCmdErrCnt     8 UINT        "EH_IMU Command Error Counter"
+  APPEND_ITEM    SPARE          16 UINT        "SPARE BYTES"
+  APPEND_ITEM    magX           32 FLOAT       "Magentometer X Value (guass)" LITTLE_ENDIAN 
+  APPEND_ITEM    magY           32 FLOAT       "Magentometer Y Value (guass)" LITTLE_ENDIAN
+  APPEND_ITEM    magZ           32 FLOAT       "Magentometer Z Value (guass)" LITTLE_ENDIAN
+  APPEND_ITEM    accelX         32 FLOAT       "Accelerometer X Value (guass)" LITTLE_ENDIAN
+  APPEND_ITEM    accelY         32 FLOAT       "Accelerometer Y Value (guass)" LITTLE_ENDIAN
+  APPEND_ITEM    accelZ         32 FLOAT       "Accelerometer Z Value (guass)" LITTLE_ENDIAN

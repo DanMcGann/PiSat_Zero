@@ -1,0 +1,5 @@
+#This is a segment of the main cmd_tlm_server.txt 
+
+INTERFACE PISATZ0001 udp_interface.rb 10.0.0.30 1234 1235 nil nil
+    TARGET PISATZ0001
+    DISABLE_DISCONNECT

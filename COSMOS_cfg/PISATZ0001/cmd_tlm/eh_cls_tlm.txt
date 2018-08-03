@@ -1,0 +1,17 @@
+TELEMETRY PISATZ0001 EH_CLS_TLM BIG_ENDIAN "Color and Light Sensor telemetry"
+  APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x0940 "CCSDS Packet identification" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SEQUENCE 16 UINT        "CCSDS Packet Sqeuence Control" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_LENGTH   16 UINT        "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SECONDS  32 UINT        "CCSDS Telemetry Secondary Header (seconds)"
+  APPEND_ITEM    CCSDS_SUBSECS  16 UINT        "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM    usCmdCnt        8 UINT        "EH_CLS Command Counter"
+  APPEND_ITEM    usCmdErrCnt     8 UINT        "EH_CLS Command Error Counter"
+  APPEND_ITEM    padding        16 uint        "Structural padding"
+  APPEND_ITEM    red            32 UINT         "Red Color" LITTLE_ENDIAN
+    FORMAT_STRING %d
+  APPEND_ITEM    green          32 UINT         "Green Color" LITTLE_ENDIAN
+    FORMAT_STRING %d
+  APPEND_ITEM    blue           32 UINT         "Blue Color"LITTLE_ENDIAN
+    FORMAT_STRING %d
+  APPEND_ITEM    lightLvl       32 UINT         "Raw light level" LITTLE_ENDIAN
+    FORMAT_STRING %d

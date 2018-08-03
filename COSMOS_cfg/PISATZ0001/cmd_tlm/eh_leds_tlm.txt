@@ -1,0 +1,9 @@
+TELEMETRY PISATZ0001 EH_LEDS_TLM BIG_ENDIAN "EH_LEDS telemetry"
+  APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x0900 "CCSDS Packet identification" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SEQUENCE 16 UINT        "CCSDS Packet Sqeuence Control" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_LENGTH   16 UINT        "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SECONDS  32 UINT        "CCSDS Telemetry Secondary Header (seconds)"
+  APPEND_ITEM    CCSDS_SUBSECS  16 UINT        "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM    usCmdCnt        8 UINT        "EH_LEDS Command Counter"
+  APPEND_ITEM    usCmdErrCnt     8 UINT        "EH_LEDS Command Error Counter"
+  APPEND_ITEM    Spare           8 UINT        "" 

@@ -1,0 +1,21 @@
+TELEMETRY PISATZ0001 XLI_LAB_TLM BIG_ENDIAN "Command Ingest Lab Telemetry"
+  APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x09B0 "CCSDS Packet identification" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SEQUENCE 16 UINT        "CCSDS Packet Sqeuence Control" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_LENGTH   16 UINT        "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SECONDS  32 UINT        "CCSDS Telemetry Secondary Header (seconds)"
+  APPEND_ITEM    CCSDS_SUBSECS  16 UINT        "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM    SPARE         8 UINT        "Spare Byte for padding"
+  APPEND_ITEM    CmdCnt        8 UINT        "XLI_LAB Command Counter"
+  APPEND_ITEM    CmdErrCnt     8 UINT        "XLI_LAB Command Error Counter"
+  APPEND_ITEM    SOCKETCONNECTED 8 UINT      "Is the lab socket connected?"
+  APPEND_ITEM    FDPDUSDROPPED 8 UINT        "Number of FDPdus Dropped"
+  APPEND_ITEM    EOFDUSDROPPED 8 UINT        "Number of EOFdus Dropped"
+  APPEND_ITEM    FINDUSDROPPED 8 UINT        "Number of FINdus Dropped"
+  APPEND_ITEM    ACKPDUSDROPPED 8 UINT       "Number of ACKPdus Dropped"
+  APPEND_ITEM    MDPDUSDROPPED 8 UINT        "Number of MDPdus Dropped"
+  APPEND_ITEM    NAKDUSDROPPED 8 UINT        "Number of NAKdus Dropped"
+  APPEND_ARRAY_ITEM SPARE 8 UINT 16          "Spare"
+  APPEND_ITEM    INGESTPACKETS 32 UINT       "Number of Ingest Packets"
+  APPEND_ITEM    INGESTERRORS 32 UINT        "Number of Ingest Errors"
+  APPEND_ITEM    PDUSCAPTURES 32 UINT        "Number of PDUs Captured"
+

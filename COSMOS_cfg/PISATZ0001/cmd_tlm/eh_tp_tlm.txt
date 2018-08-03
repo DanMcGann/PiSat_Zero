@@ -1,0 +1,14 @@
+TELEMETRY PISATZ0001 EH_TP_TLM BIG_ENDIAN "Temperature and Pressure from the EH"
+  APPEND_ID_ITEM CCSDS_STREAMID 16 UINT 0x0960 "CCSDS Packet identification" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SEQUENCE 16 UINT        "CCSDS Packet Sqeuence Control" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_LENGTH   16 UINT        "CCSDS Packet Data Length" BIG_ENDIAN
+  APPEND_ITEM    CCSDS_SECONDS  32 UINT        "CCSDS Telemetry Secondary Header (seconds)"
+  APPEND_ITEM    CCSDS_SUBSECS  16 UINT        "CCSDS Telemetry Secondary Header (subseconds)"
+  APPEND_ITEM    usCmdCnt        8 UINT        "EH_TP Command Counter"
+  APPEND_ITEM    usCmdErrCnt     8 UINT        "EH_TP Command Error Counter"
+  APPEND_ITEM    SPARE          16 UINT        "spare byte padding"
+  APPEND_ITEM    temp           32 FLOAT       "Temperature" LITTLE_ENDIAN
+    UNITS Celcius C
+  APPEND_ITEM    press          32 FLOAT       "Pressure" LITTLE_ENDIAN
+     UNITS Pascals Pa
+
