@@ -29,8 +29,8 @@ Core Flight System (cFS) Apps for PiSat Zero Hardware
       - Open Souce Ground Station Avaliable from Ball Aero Space 
       - Download and Install Information can be found here http://cosmosrb.com/
 
-  ### Instillation
-  Note this instillation and build process assumes that the make build system is being used. Seting up building of the code using the CMake build system is different, a refrence for how to use that system can be found in /cfe/cmake/README.md from the cFS distribution.
+  ### Installation
+  Note this installation and build process assumes that the make build system is being used. Seting up building of the code using the CMake build system is different, a refrence for how to use that system can be found in /cfe/cmake/README.md from the cFS distribution.
    1. Clone or download this repo onto your PiSat.
    2. Copy the folders eh_imu, eh_cls, eh_leds, and pisat_hwlib into your cFS apps folder.
         Usually found 
