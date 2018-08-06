@@ -10,7 +10,7 @@ Core Flight System (cFS) Apps for PiSat Zero Hardware
   #### Magnetometer and Accelerometer: lsm303d
   The lsm303d sensor provides temperature and pressure information. This is interfaces with by the lsm303_lib located as part of the pisat_hwlib cfe library. This is controlled by the eh_imu cfe app.
     
-## Instillation and Config
+## Installation and Config
 
   ### Requirements
    - cFS: NASA Goddard's Core Flight System
@@ -23,7 +23,7 @@ Core Flight System (cFS) Apps for PiSat Zero Hardware
       
    - WiringPi: Raspberry Pi gpio interaction suite
       - Raspbian Stretch may come with this preinstalled ( UNCONFIRMED ).
-      - Instillation Instructions can be found here http://wiringpi.com/download-and-install/
+      - Installation Instructions can be found here http://wiringpi.com/download-and-install/
     
    - COSMOS
       - Open Souce Ground Station Avaliable from Ball Aero Space 
